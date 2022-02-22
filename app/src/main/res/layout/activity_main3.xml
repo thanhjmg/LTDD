@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_insetEdge="none"
+    tools:context=".MainActivity3">
+
+
+  <TextView
+      android:id="@+id/lg3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="96dp"
+      android:fontFamily="sans-serif-black"
+      android:text="LOGIN"
+      android:textColor="#000000"
+      android:textSize="48sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.051"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/edtname"
+      android:layout_width="348dp"
+      android:layout_height="46dp"
+      android:layout_marginTop="64dp"
+      android:autoText="false"
+      android:background="#DACFCF"
+      android:drawableLeft="@drawable/avatar_user"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="Name"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.492"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lg3" />
+
+  <EditText
+      android:id="@+id/edtpass"
+      android:layout_width="347dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="52dp"
+      android:background="#DACFCF"
+      android:drawableLeft="@drawable/lockmin"
+      android:drawableRight="@drawable/eye"
+      android:ems="10"
+      android:fontFamily="sans-serif"
+      android:inputType="textPersonName"
+      android:text="Password"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.484"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+  <Button
+      android:id="@+id/btnlog"
+      android:layout_width="348dp"
+      android:layout_height="61dp"
+      android:layout_marginTop="48dp"
+      android:text="LOGIN"
+      android:textColor="#FFFFFF"
+      android:textSize="24sp"
+      app:backgroundTint="#000000"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.476"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtpass" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="64dp"
+      android:fontFamily="sans-serif-black"
+      android:text="Forgot your password?"
+      android:textColor="#000000"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnlog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
